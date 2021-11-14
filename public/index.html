@@ -1,0 +1,159 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="robots" content="index,follow">
+  <meta name="keywords" content="developper,developpeur,html,css,vuejs,vue,javascript,API,Figma,mysql,Website,Internet,webapps,creation,systeme,administration,creation site internet, creation site internet bordeauw, creation site internet 33, creation sites internet, creation site web, creation sites web, développeur, développeur web, webdesigner, graphiste, référenceur, SEO">
+  <meta name="description" content="Développeur de sites internet et d'applications web, Guillaume NAVAL">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/fc875cabde.js" crossorigin="anonymous"></script>
+  <meta content="width=device-width, initial-scale=1" name="viewport" />
+  <title>Guillaume NAVAL- Développeur web </title>
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <img class="photo" src="/images/PHOTO.png" alt="photo_ID"/>
+      <h1>Guillaume NAVAL</h1>
+      <h2>Développeur Fullstack</h2>
+      <a class="lcontact" href="#contact"><button class="btncontact">Contact</button></a>
+    </header>
+    <section id="about">
+      <p class="p_title">Bonjour, je suis Guillaume NAVAL. Enchanté.</p>
+      <p>
+        Après 4 ans dans le milieu de l'infographie 2d/3d, j'ai entrepris une reconversion en tant que développeur web, un métier qui m'a toujours intéressé.
+        Je suis passionné par l'avancée technologique, l'optimisation et l'évolution des solutions techniques.
+        J'ai pu concevoir des applications web notamment avec Vue.js et Node.js, la partie front-end ainsi que back-end. <br><a class="lblue_link" href="files/CV.pdf" target="_blank">Voici mon CV pour plus de détails sur mon parcours.</a></p>
+    </section>
+    <section id="skills">
+      <h2 class="skills_title">MES COMPÉTENCES</h2>
+      <div class="duoblock">
+          <div class="blockskill">
+            <div class="skill">
+              <span class="lblue">Javascript</span>
+              <div class="bar">
+                <span style="width:90%;"><span class="progress"></span></span>
+              </div>
+            </div>
+            <div class="skill">
+              <span class="lblue">Vuejs</span>
+              <div class="bar">
+                <span style="width:75%;"><span class="progress"></span></span>
+              </div>
+            </div>
+            <div class="skill">
+              <span class="lblue">Nodejs</span>
+              <div class="bar">
+                <span style="width:80%;"><span class="progress"></span></span>
+              </div>
+            </div>
+          </div>
+          <div class="blockskill">
+            <div class="skill">
+              <span class="lblue">HTML5 & CSS</span>
+              <div class="bar">
+                <span style="width:100%;"><span class="progress"></span></span>
+              </div>
+            </div>
+            <div class="skill">
+              <span class="lblue">MySQL, MongoDB/AstraDB</span>
+              <div class="bar">
+                <span style="width:65%;"><span class="progress"></span></span>
+              </div>
+            </div>
+            <div class="skill">
+              <span class="lblue">Suite Adobe & Figma</span>
+              <div class="bar">
+                <span style="width:100%;"><span class="progress"></span></span>
+              </div>
+            </div>
+        </div>
+      </div>
+    </section>
+    <div class="splitbar">
+      <span class="bar--white"></span>
+    </div>
+    <section class="role">
+      <div class="frontendcard">
+        <img src="images/frontend.png" alt="frontend"/>
+        <h2>Développement front-end</h2>
+        <p>Conception de la maquette, UI/UX design, je construis l'aspect visuel et fonctionnel</p>
+      </div>
+      <div class="backendcard">
+        <img src="images/backend.png" alt="backend"/>
+        <h2>Développement back-end</h2>
+        <p>Création d'une API, données dynamiques et gestion BDD</p>
+      </div>
+    </section>
+    <section id="projects">
+      <h2>MES PROJETS</h2>
+      <div class="allprojectcards">
+        <div class="projectcard">
+          <figure>
+            <img src="images/backend.png" alt="backend"/>
+            <figcaption>
+              <h2 class="projectcard_title">High-end, custom residential renovaters serving Fraser Valley homeowners.</h2>
+              <a class="projectcard_linktxt" target="_blank">
+                <span>Visiter le site</span>
+              </a>
+            </figcaption>
+          </figure>
+        </div>
+        <div class="projectcard">
+          <figure>
+            <img src="images/backend.png" alt="backend"/>
+            <figcaption>
+              <h2 class="projectcard_title">High-end, custom residential renovaters serving Fraser Valley homeowners.</h2>
+              <a class="projectcard_linktxt" target="_blank">
+                <span>Visiter le site</span>
+              </a>
+            </figcaption>
+          </figure>
+        </div>
+        <div class="projectcard">
+          <figure>
+            <img src="images/backend.png" alt="backend"/>
+            <figcaption>
+              <h2 class="projectcard_title">High-end, custom residential renovaters serving Fraser Valley homeowners.</h2>
+              <a class="projectcard_linktxt" target="_blank">
+                <span>Visiter le site</span>
+              </a>
+            </figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+    <section id="contact">
+      <h2>CONTACT</h2>
+      <p class="lblue contacttxt">Une question ? N’hésitez pas à me contacter, pour me faire part 
+        de vos offres et vos projets !</p>
+      <form method="POST" action="mail-script.php" class="form">
+        <!--Nom-->
+        <input type="text" class="form-name" name="name" id="name" placeholder="Nom*" required>
+        <!--Email-->
+        <input type="email" class="form-email" name="email" id="email" placeholder="Email*"required>
+        <!--Message-->
+        <textarea placeholder="Message*" id="message" name="message" required="" class="formmsg"></textarea>
+        <input type="submit" class="btnsend" name="submit" value="Envoyer le message">
+      </form>
+    </section>
+  </div>
+  <footer>
+    <div class="social_icons">
+      <a href="https://github.com/guillaume-naval" target="_blank" class="social_link" rel="noopener">
+        <i class="fab fa-github"></i>
+      </a>
+      <a href="https://www.linkedin.com/in/guillaume-naval/" target="_blank" class="social_link" rel="noopener">
+        <i class="fab fa-linkedin"></i>
+      </a>
+      <a href="https://twitter.com/guillaume_naval" target="_blank" class="social_link" rel="noopener">
+        <i class="fab fa-twitter"></i>
+      </a>
+    </div>
+    <p>Guillaume Naval © 2021</p>
+  </footer>
+</body>
+</html>
