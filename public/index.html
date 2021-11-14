@@ -117,9 +117,12 @@
           <figure>
             <img src="images/backend.png" alt="backend"/>
             <figcaption>
-              <h2 class="projectcard_title">High-end, custom residential renovaters serving Fraser Valley homeowners.</h2>
-              <a class="projectcard_linktxt" target="_blank">
+              <h2 class="projectcard_title">Site vitrine de planification de vacances et d’hébergements</h2>
+              <a class="projectcard_linktxt" href="https://github.com/guillaume-naval/Reservia/deployments/activity_log?environment=github-pages" target="_blank">
                 <span>Visiter le site</span>
+              </a>
+              <a class="projectcard_linktxt" href="https://github.com/guillaume-naval/Reservia" target="_blank">
+                <span>Le projet sur Github</span>
               </a>
             </figcaption>
           </figure>
@@ -130,7 +133,8 @@
       <h2>CONTACT</h2>
       <p class="lblue contacttxt">Une question ? N’hésitez pas à me contacter, pour me faire part 
         de vos offres et vos projets !</p>
-      <form method="POST" action="mail-script.php" class="form">
+      <!-- <iframe name="votar" style="display:none;"></iframe> weird trick  -->
+      <form method="POST" action="mail-script.php" class="form" target="votar" onSubmit="alert('Merci ! Votre message a été envoyé !');">
         <!--Nom-->
         <input type="text" class="form-name" name="name" id="name" placeholder="Nom*" required>
         <!--Email-->
