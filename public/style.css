@@ -2,6 +2,36 @@
     margin:0;
     padding:0;
 }
+/*COLORS*/
+.lblue{
+    color:#01B4DB;
+}
+.white{
+    color:white;
+}
+.medblue{
+    color:#407BFF;
+}
+/*SIZE*/
+.small{
+   font-size: 0.7em; 
+}
+.medium{
+    font-size: 1em;
+}
+.big{
+    font-size:2em;
+}
+/*WEIGHT*/
+.thin{
+    font-weight:100;
+}
+.regular{
+    font-weight: 300;
+}
+.heavy{
+    font-weight: 900;
+}
 html {
     background-color: white;
     font-family: 'Montserrat', sans-serif;
@@ -11,23 +41,33 @@ body{
     color:#ffffff;
     box-sizing: border-box;
     font-size:15px;
+    background-color: #112240;
 }
 a,li{
     list-style: none;
     text-decoration: none;
 }
-a:visited{
+a{
     color:#01B4DB;
 }
-.lcontact:visited{
-    color:white;
+a:hover{
+    color:#50dfff;
 }
-.btncontact{
-    width: 150px;
+.btn{
     padding:1em;
     font-size: 0.8em;
-    border-radius: 2em;
-    cursor: pointer;
+    border: 2px solid #01B4DB;
+    border-radius: 0.4em;
+    color:#01B4DB;
+    font-weight:600;
+}
+.btncv{
+    padding:1em 1.5em 1em 1.5em;
+}
+.btn:hover{
+    background-color: #01b3db1a;
+    transition: 0.5s;
+    color:#50dfff;
 }
 nav{
     display:flex;
@@ -39,63 +79,58 @@ li{
     padding:1em;
 }
 header{
-    display:flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    color:white;
-    height:30em;
-    font-size: 1.2em;
-    background-color:#293144;
+    padding: 1em;
 }
-header h2{
-    font-weight: 300;
-    font-size: 1em;
-    color: #01B4DB;
-    margin:0.5em 0em 2em 0em;
+nav{
+    display: flex;
+    justify-content: space-between;
 }
-.lblue_link{
-    color:#01B4DB;
+.logo{
+    margin-left: 1em;
 }
-.wrap {
-    background-color: #252B42;
-}
-header button{
-    display:flex;
-    justify-content: center;
-    font-weight:600;
-    width:20%;
-    color:white;
-    background-color: #01B4DB;
-    border:none;
-}
-header a{
-    color:white;
+ol{
+    display: flex;
 }
 .photo{
     width:200px;
     margin-bottom:2em;
 }
-.p_title{
-    font-weight: 900;
-    font-size: 1em;
+#presentation{
+    display: flex;
+    justify-content: center;
+    padding: 2.5em;
+    margin-top:5em;
+    margin-bottom:15em;
+    font-size: 1.1em;
 }
-#about p{
+.resume{
+    display: flex;
+    flex-direction: column;
+    width:50em;
+    height:20em;
+    justify-content: space-evenly;
+}
+.btncontact{
+    width: 100px;
+    font-size: 0.8em;
+    cursor: pointer;
+    text-align: center;
+    background-color: transparent;
+}
+.quickpres{
     margin:0.5em;
-    width:330px;
+    width:80%;
 }
-
 #about{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    text-align: center;
-    line-height:2em;
+    line-height:2.5em;
     margin-top:2em;
     padding:1.5em;
 }
-.lblue{
+.skillblue{
     color:#01B4DB;
     font-size: 1.1em;
     text-align:center;
@@ -116,7 +151,7 @@ header a{
     height: 0.8em;
     width:320px;
     position: relative;
-    background: #1a1e2e;
+    background: #131620;
     overflow: hidden;
     border-radius: 1em; 
     margin-top:0.5em; 
@@ -132,12 +167,12 @@ header a{
     -moz-animation: progressBar 3s ease-in-out;
     -moz-animation-fill-mode:both; 
 }
-@-webkit-keyframes progressBar {
+@keyframes progressBar {
   0% { width: 0; }
   100% { width: 100%; }
 }
 
-@-moz-keyframes progressBar {
+@keyframes progressBar {
   0% { width: 0; }
   100% { width: 100%; }
 }
@@ -157,36 +192,39 @@ header a{
     flex-wrap: wrap;
     width: 100%;
     align-content: center;
-    justify-content: center;
-    color:black;    
+    justify-content: center; 
 }
 .frontendcard,.backendcard{
     display: flex;
     flex-direction: column;
-    align-content: center;
-    justify-content: center;
     width: 320px;
-    padding: 1.2em;
-    background-color: white;
     border-radius: 1em;
-    text-align: center;
-    margin:1em;
+    margin:2em 1em 4em 1em;
+}
+.frontend_text > *{
+    margin-bottom:1.5em;
+}
+.frontendcard > *,.backendcard > *{
+    margin-bottom:1.5em;
 }
 .role img{
-    width:100%;
+    width:20em;
+}
+section{
+    margin:4em 0 4em 0;
 }
 #projects{
     display:flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin:4em 0 4em 0;
 }
 .allprojectcards{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
+    margin-top:2em;
 }
 .projectcard{
     display: flex;
@@ -217,8 +255,6 @@ figure{
     margin:0;
     padding:2em;
     overflow: hidden;
-    
-    
 }
 figure:hover figcaption{
     opacity:1;
@@ -229,7 +265,7 @@ figcaption{
     height: 100%;
     flex-direction: column;
     position:absolute;
-    background-color:#000000de;
+    background-color:#000d1dd7;
     opacity:0;
     z-index: 0;
     top: 0;
@@ -254,17 +290,17 @@ figcaption{
 form{
     display: flex;
     flex-direction: column;
-    width: 350px;
+    width: 320px;
 }
 input,textarea{
     font-family:inherit;
     margin-top: 1.5em;
-    border-radius: 2em;
+    border-radius: 0.3em;
     padding: 1em 2em 1em 2em;
     transition-duration: 0.7s;
     outline:none;
     border:none;
-    border:solid 0.2em white;
+    border:solid 0.3em white;
 }
 .formmsg{
     height: 10em;
@@ -276,16 +312,21 @@ input::placeholder{
     font-family: 'Montserrat', sans-serif;
 }
 input:focus, textarea:focus{
-    border:solid 0.2em #01B4DB;
+    border:solid 0.3em #01B4DB;
 }
 .btnsend{
-    background-color: #01B4DB;
-    border:none;
-    color:white;
+    background-color: transparent;
+    border: 2px solid #01B4DB;
+    color:#01B4DB;
     width:15em; 
     display: flex;
     justify-content: center;
     font-weight: 600;
+}
+.btnsend:hover{
+    background-color: #01b3db1a;
+    transition: 0.5s;
+    color:#50dfff;
 }
 footer{
     color:black;
@@ -295,6 +336,7 @@ footer{
     height: 6em;
     width:100%;
     margin-top: 2em;
+    padding-bottom: 3em;
 }
 .social_icons{
     color:#01B4DB;
@@ -304,12 +346,71 @@ footer{
     margin:0.4em;
 }
 
+/* LOADER */
 
-@media screen and (min-width: 770px) {
-    #about p{
-        margin:0.5em;
-        width:650px;
+.loader{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+.loader__wrap{
+    display:flex;
+    position: fixed;
+    justify-content: center;
+    align-items:center;
+    background: #0a1324;
+    z-index: 100;
+    width: 100%;
+    height: 100%;
+    opacity:1;
+    animation: 0.2s ease-in-out 3s forwards;
+}
+#path{
+    stroke-dasharray: 1000;
+    stroke-dashoffset: 1000;
+    animation: pathanim 2.5s linear forwards;
+    transform-origin: center;
+}
+@keyframes pathanim {
+    0% {
+        fill:#0a1324;
     }
+    45%{
+        fill:#0a1324;
+        
+    }
+    65%{
+        stroke-dashoffset:0;  
+        
+    }
+    75%{
+        fill:#01B4DB;
+        stroke-dashoffset:0;
+        transform:scale(1);
+    }
+    85%{
+        fill:#01B4DB;
+        stroke-dashoffset:0;
+        transform:scale(1);
+    }
+    100%{  
+        transform:scale(0);
+        fill:#01B4DB;
+        stroke-dashoffset: 0;
+    }
+}
+#loader.hidden{
+    opacity: 0;
+    visibility: hidden;
+}
+#loader{
+    opacity: 1;
+    transition: 0.5s linear;
+}
+
+/* MEDIAQUERRIES */
+@media screen and (min-width: 770px) {
     .duoblock{
         display: flex;
         justify-content: space-evenly;
@@ -324,10 +425,42 @@ footer{
     #contact p{
         width: 600px;
     }
+    .role{
+        flex-direction: column;
+    }
+    .frontendcard{
+        margin-top: 5em;
+        flex-direction: row-reverse;
+        width:720px;
+    }
+    .backendcard{
+        margin-top: 5em;
+        flex-direction: row;
+        width:720px;
+    }
+    .frontendcard img, .backendcard img{
+        width:25em;
+        margin: 0em 1em 0em 1em;
+    }
+    .resume{
+        font-size: 1.4em;
+    }
+    .quickpres{
+        width:65%;
+    }
 }
 @media screen and (min-width: 1440px) {
-    #about p{
-        margin:0.5em;
-        width:950px;
+    .frontendcard img, .backendcard img{
+        width:30em;
+        margin: 0em 2em 0em 2em;
+    }
+    .frontendcard,.backendcard{
+        width:1000px;
+    }
+    .backendcard{
+        margin-left:5em;
+    }
+    .frontendcard{
+        margin-right:5em;
     }
 }
