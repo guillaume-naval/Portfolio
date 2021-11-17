@@ -69,6 +69,12 @@ a:hover{
     transition: 0.5s;
     color:#50dfff;
 }
+.fa-angle-down{
+    color:#50dfff;
+    text-align: center;
+    margin-top:5em;
+    font-size:2em;
+}
 nav{
     display:flex;
     justify-content: flex-end;
@@ -159,22 +165,6 @@ ol{
 .bar span {
     display: block;
     height: 100%;
-}
-.progress {
-    background-image: linear-gradient(to right,#297CC9,#58C5F4);    
-    -webkit-animation: progressBar 3s ease-in-out;
-    -webkit-animation-fill-mode:both; 
-    -moz-animation: progressBar 3s ease-in-out;
-    -moz-animation-fill-mode:both; 
-}
-@keyframes progressBar {
-  0% { width: 0; }
-  100% { width: 100%; }
-}
-
-@keyframes progressBar {
-  0% { width: 0; }
-  100% { width: 100%; }
 }
 .splitbar{
     display: flex;
@@ -408,7 +398,44 @@ footer{
     opacity: 1;
     transition: 0.5s linear;
 }
+.js-scroll {
+    transition: opacity 0.5s;
+    opacity: 0;
+}
+  
+.js-scroll.scrolled {
+    opacity: 1;
+}
+.fade-in-bottom {
+    animation: fade-in-bottom 0.5s ease-in-out both;
+  }
+  
+@keyframes fade-in-bottom {
+    0% {
+      transform: translateY(50px);
+      opacity: 0;
+    }
+    100% {
+      transform: translateY(0);
+      opacity: 1;
+    }
+}
+.progress {
+    background-image: linear-gradient(to right,#297CC9,#58C5F4);    
+    -webkit-animation: progressBar 3s ease-in-out;
+    -webkit-animation-fill-mode:both; 
+    -moz-animation: progressBar 3s ease-in-out;
+    -moz-animation-fill-mode:both; 
+}
+@keyframes progressBar {
+  0% { width: 0; }
+  100% { width: 100%; }
+}
 
+@keyframes progressBar {
+  0% { width: 0; }
+  100% { width: 100%; }
+}
 /* MEDIAQUERRIES */
 @media screen and (min-width: 770px) {
     .duoblock{
@@ -442,6 +469,7 @@ footer{
         width:25em;
         margin: 0em 1em 0em 1em;
     }
+    
     .resume{
         font-size: 1.4em;
     }

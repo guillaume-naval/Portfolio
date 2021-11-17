@@ -24,33 +24,34 @@
   <div class="wrap">
     <header>
       <nav>
-        <svg class="logo" width="32" height="32" viewBox="0 0 110 110" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <svg class="logo fade-in-bottom" style="animation-delay: 3200ms;" width="32" height="32" viewBox="0 0 110 110" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path  d="M0 0H68.8785V20.0816H21.5888V60.5431H49.8598V49.8479H34.2698V33.2703H59.2138L91.2299 60.5431V33.2703H110V110L68.8785 75.8531V110H49.8598V83.5379H0V0Z" fill="#01B4DB"/>
         </svg>
         <ol>
-          <li class="fadedown-enter-done" style="transition-delay: 0ms;">
+          <li class="fade-in-bottom" style="animation-delay: 3200ms;">
             <a href="#about">About</a>
           </li>
-          <li class="fadedown-enter-done" style="transition-delay: 200ms;">
+          <li class="fade-in-bottom" style="animation-delay: 3400ms;">
             <a href="#projects">Work</a>
           </li>
-          <li class="fadedown-enter-done" style="transition-delay: 300ms;">
+          <li class="fade-in-bottom" style="animation-delay: 3600ms;">
               <a class ="btn btncv"href="files/CV.pdf" target="_blank" rel="noopener">CV</a>
           </li>
         </ol>
       </nav>
     </header>
-    <section id="presentation">
+    <section id="presentation" class="fade-in-bottom" style="animation-delay: 3800ms;">
       <div class="resume">
         <p class="lblue regular">Hello, mon nom est</p>
         <h1 class="big">Guillaume Naval.</h1>
         <h1 class="big lblue">je développe des sites et des applications web.</h1>
-        <p class="regular small">Je suis développeur web fullstack (et parfois infographiste). Actuellement, 
+        <p class="regular">Je suis développeur web fullstack (et parfois infographiste). Actuellement, 
           je me concentre sur <span class="lblue">Node.js</span>, le framework <span class="lblue">Vue.js</span> que j'apprécie particulièrement et je découvre <span class="lblue">React</span> en parallèle.</p>
         <a class="btn btncontact" href="#contact">Contact</a>
+        <!-- <i class="fas fa-angle-down"></i> -->
       </div>
     </section>
-    <section id="about">
+    <section id="about" class="js-scroll">
       <img class="photo" src="images/photo.png" alt="photo_ID"/>
       <div class="quickpres">
         <p class="medium heavy">Bonjour, je suis Guillaume NAVAL. Enchanté.</p>
@@ -60,7 +61,7 @@
           J'ai pu concevoir des applications web notamment avec Vue.js et Node.js, la partie front-end ainsi que back-end. <br><a class="lblue" href="files/CV.pdf" rel="noopener" target="_blank">Voici mon CV pour plus de détails sur mon parcours.</a></p>
       </div>
     </section>
-    <section id="skills">
+    <section id="skills" class="js-scroll">
       <h2 class="skills_title">MES COMPÉTENCES</h2>
       <div class="duoblock">
           <div class="blockskill">
@@ -105,11 +106,11 @@
         </div>
       </div>
     </section>
-    <div class="splitbar">
+    <div class="splitbar js-scroll">
       <span class="bar--white"></span>
     </div>
     <section class="role">
-      <div class="frontendcard">
+      <div class="frontendcard js-scroll">
         <div class="frontend_text">
           <p class="heavy medblue">CODE</p>
           <h2 class="white">Développement front-end</h2>
@@ -117,16 +118,16 @@
         </div>
         <img src="images/frontend.png" alt="frontend"/>
       </div>
-      <div class="backendcard">
+      <div class="backendcard js-scroll">
         <div class="frontend_text">
-          <p class="roletitle medblue">CODE</p>
+          <p class="heavy medblue">CODE</p>
           <h2 class="white">Développement back-end</h2>
           <p class="lblue">Création d'une API, données dynamiques et gestion BDD.</p>
         </div>
         <img src="images/backend.png" alt="backend"/>
       </div>
     </section>
-    <section id="projects">
+    <section id="projects" class="js-scroll">
       <h2>MES PROJETS</h2>
       <div class="allprojectcards">
         <div class="projectcard">
@@ -168,7 +169,7 @@
         </div>
       </div>
     </section>
-    <section id="contact">
+    <section id="contact" class="js-scroll">
       <h2>CONTACT</h2>
       <p class="skillblue contacttxt">Une question ? N’hésitez pas à me contacter, pour me faire part 
         de vos offres et vos projets !</p>
@@ -198,6 +199,6 @@
     </div>
     <p>Guillaume Naval © 2021</p>
   </footer>
-  <script src="index.js" ></script>
+  <script src="index.js" defer></script>
 </body>
 </html>
