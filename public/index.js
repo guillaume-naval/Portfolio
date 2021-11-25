@@ -25,7 +25,7 @@ const elementOutofView = (el) => {
 };
 
 const displayScrollElement = (element) => {
-  element.classList.add("scrolled");
+    element.classList.add("scrolled");
 };
 const handleScrollAnimation = () => {
   scrollElements.forEach((el) => {

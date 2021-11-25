@@ -22,169 +22,183 @@
     </div>
   </div>
   <div class="wrap">
-    <header>
-      <nav>
-        <svg class="logo fade-in-bottom" style="animation-delay: 3200ms;" width="32" height="32" viewBox="0 0 110 110" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <path  d="M0 0H68.8785V20.0816H21.5888V60.5431H49.8598V49.8479H34.2698V33.2703H59.2138L91.2299 60.5431V33.2703H110V110L68.8785 75.8531V110H49.8598V83.5379H0V0Z" fill="#01B4DB"/>
-        </svg>
-        <ol>
-          <li class="fade-in-bottom" style="animation-delay: 3200ms;">
-            <a href="#about">About</a>
-          </li>
-          <li class="fade-in-bottom" style="animation-delay: 3400ms;">
-            <a href="#projects">Work</a>
-          </li>
-          <li class="fade-in-bottom" style="animation-delay: 3600ms;">
-              <a class ="btn btncv"href="files/CV.pdf" target="_blank" rel="noopener">CV</a>
-          </li>
-        </ol>
-      </nav>
-    </header>
-    <section id="presentation" class="fade-in-bottom" style="animation-delay: 3800ms;">
-      <div class="resume">
-        <p class="lblue regular">Hello, mon nom est</p>
-        <h1 class="big">Guillaume Naval.</h1>
-        <h1 class="big lblue">je développe des sites et des applications web.</h1>
-        <p class="regular">Je suis développeur web fullstack (et parfois infographiste). Actuellement, 
-          je me concentre sur <span class="lblue">Node.js</span>, le framework <span class="lblue">Vue.js</span> que j'apprécie particulièrement et je découvre <span class="lblue">React</span> en parallèle.</p>
-        <a class="btn btncontact" href="#contact">Contact</a>
-        <!-- <i class="fas fa-angle-down"></i> -->
-      </div>
-    </section>
-    <section id="about" class="js-scroll">
-      <img class="photo" src="images/photo.png" alt="photo_ID"/>
-      <div class="quickpres">
-        <p class="medium heavy">Bonjour, je suis Guillaume NAVAL. Enchanté.</p>
-        <p class="medium">
-          Après 4 ans dans le milieu de l'infographie 2d/3d, j'ai entrepris une reconversion en tant que développeur web, un métier qui m'a toujours intéressé.
-          Je suis passionné par l'avancée technologique, l'optimisation et l'évolution des solutions techniques.
-          J'ai pu concevoir des applications web notamment avec Vue.js et Node.js, la partie front-end ainsi que back-end. <br><a class="lblue" href="files/CV.pdf" rel="noopener" target="_blank">Voici mon CV pour plus de détails sur mon parcours.</a></p>
-      </div>
-    </section>
-    <section id="skills" class="js-scroll">
-      <h2 class="skills_title">MES COMPÉTENCES</h2>
-      <div class="duoblock">
-          <div class="blockskill">
-            <div class="skill">
-              <span class="skillblue">Javascript</span>
-              <div class="bar">
-                <span style="width:90%;"><span class="progress"></span></span>
+    <div class="area" >
+      <ul class="circles fade-in-bottom" style="animation-delay: 4s;">
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+      </ul>
+      <header>
+        <nav class="fixed">
+          <a  href="#presentation"><svg class="logo fade-in-bottom" style="animation-delay: 3200ms;" width="32" height="32" viewBox="0 0 110 110" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path  d="M0 0H68.8785V20.0816H21.5888V60.5431H49.8598V49.8479H34.2698V33.2703H59.2138L91.2299 60.5431V33.2703H110V110L68.8785 75.8531V110H49.8598V83.5379H0V0Z" fill="#01B4DB"/>
+          </svg></a>
+          <ol>
+            <li class="fade-in-bottom" style="animation-delay: 3200ms;">
+              <a  href="#about">About</a>
+            </li>
+            <li class="fade-in-bottom" style="animation-delay: 3400ms;">
+              <a  href="#projects">Work</a>
+            </li>
+            <li class="fade-in-bottom" style="animation-delay: 3600ms;">
+                <a class ="btn btncv"href="files/CV.pdf" target="_blank" rel="noopener">CV</a>
+            </li>
+          </ol>
+        </nav>
+      </header>
+      <section id="presentation" class="fade-in-bottom" style="animation-delay: 3800ms;">
+        <div class="resume">
+          <p class="lblue regular">Hello, mon nom est</p>
+          <h1 class="big">Guillaume Naval.</h1>
+          <h1 class="big lblue">je développe des sites et des applications web.</h1>
+          <p class="regular intro-w">Je suis développeur web fullstack (et parfois infographiste). Actuellement, 
+            je me concentre sur <span class="lblue">Node.js</span>, le framework <span class="lblue">Vue.js</span> que j'apprécie particulièrement et je découvre <span class="lblue">React</span> en parallèle.</p>
+          <a class="btn btncontact" href="#contact">Contact</a>
+          <a href="#about" class="arrow"><i class="fas fa-angle-down bounce" style="animation-delay: 4000ms;"></i></a>
+        </div>
+      </section>
+      <section id="about" class="js-scroll slide-in-up">
+        <img class="photo" src="images/photo.png" alt="photo_ID"/>
+        <div class="quickpres">
+          <p class="quickpres_title medium heavy">À propos de mon parcours</p>
+          <p class="medium">
+            Après 4 ans dans le milieu de l'infographie 2d/3d, curieux et ayant une réelle soif d'apprendre, j'ai entrepris une reconversion en tant que développeur web, un métier qui m'a toujours intéressé.
+            Je suis passionné par l'avancée technologique, l'optimisation et l'évolution des solutions techniques. 
+            Au cours de ma formation, j'ai pu concevoir des applications web utilisant notament Vuejs et Nodejs, la partie front-end comme la partie back-end. <br><a class="lblue" href="files/CV.pdf" rel="noopener" target="_blank">Voici mon CV pour plus de détails sur mon parcours.</a></p>
+        </div>
+      </section>
+      <section id="skills" class="js-scroll slide-in-up">
+        <h2 class="skills_title">MES COMPÉTENCES</h2>
+        <div class="duoblock">
+            <div class="blockskill">
+              <div class="skill">
+                <span class="skillblue">Javascript</span>
+                <div class="bar">
+                  <span style="width:90%;"><span class="js-scroll progress"></span></span>
+                </div>
+              </div>
+              <div class="skill">
+                <span class="skillblue">Vuejs</span>
+                <div class="bar">
+                  <span style="width:75%;"><span class="js-scroll progress"></span></span>
+                </div>
+              </div>
+              <div class="skill">
+                <span class="skillblue">Nodejs</span>
+                <div class="bar">
+                  <span style="width:80%;"><span class="js-scroll progress"></span></span>
+                </div>
               </div>
             </div>
-            <div class="skill">
-              <span class="skillblue">Vuejs</span>
-              <div class="bar">
-                <span style="width:75%;"><span class="progress"></span></span>
+            <div class="blockskill">
+              <div class="skill">
+                <span class="skillblue">HTML5 & CSS</span>
+                <div class="bar">
+                  <span style="width:100%;"><span class="js-scroll progress"></span></span>
+                </div>
               </div>
-            </div>
-            <div class="skill">
-              <span class="skillblue">Nodejs</span>
-              <div class="bar">
-                <span style="width:80%;"><span class="progress"></span></span>
+              <div class="skill">
+                <span class="skillblue">MySQL, MongoDB/AstraDB</span>
+                <div class="bar">
+                  <span style="width:65%;"><span class="js-scroll progress"></span></span>
+                </div>
               </div>
-            </div>
+              <div class="skill">
+                <span class="skillblue">Suite Adobe & Figma</span>
+                <div class="bar">
+                  <span style="width:100%;"><span class="js-scroll progress"></span></span>
+                </div>
+              </div>
           </div>
-          <div class="blockskill">
-            <div class="skill">
-              <span class="skillblue">HTML5 & CSS</span>
-              <div class="bar">
-                <span style="width:100%;"><span class="progress"></span></span>
-              </div>
-            </div>
-            <div class="skill">
-              <span class="skillblue">MySQL, MongoDB/AstraDB</span>
-              <div class="bar">
-                <span style="width:65%;"><span class="progress"></span></span>
-              </div>
-            </div>
-            <div class="skill">
-              <span class="skillblue">Suite Adobe & Figma</span>
-              <div class="bar">
-                <span style="width:100%;"><span class="progress"></span></span>
-              </div>
-            </div>
         </div>
+      </section>
+      <div class="splitbar js-scroll slide-in-up">
+        <span class="bar--white"></span>
       </div>
-    </section>
-    <div class="splitbar js-scroll">
-      <span class="bar--white"></span>
-    </div>
-    <section class="role">
-      <div class="frontendcard js-scroll">
-        <div class="frontend_text">
-          <p class="heavy medblue">CODE</p>
-          <h2 class="white">Développement front-end</h2>
-          <p class="lblue">Conception de la maquette, UI/UX design, je construis l'aspect visuel et fonctionnel.</p>
+      <section class="role">
+        <div class="frontendcard js-scroll slide-in-up">
+          <div class="frontend_text">
+            <p class="heavy medblue">CODE</p>
+            <h2 class="white">Développement front-end</h2>
+            <p class="lblue">Conception de la maquette, UI/UX design, je construis l'aspect visuel et fonctionnel.</p>
+          </div>
+          <img src="images/frontend.png" alt="frontend"/>
         </div>
-        <img src="images/frontend.png" alt="frontend"/>
-      </div>
-      <div class="backendcard js-scroll">
-        <div class="frontend_text">
-          <p class="heavy medblue">CODE</p>
-          <h2 class="white">Développement back-end</h2>
-          <p class="lblue">Création d'une API, données dynamiques et gestion BDD.</p>
+        <div class="backendcard js-scroll slide-in-up">
+          <div class="frontend_text">
+            <p class="heavy medblue">CODE</p>
+            <h2 class="white">Développement back-end</h2>
+            <p class="lblue">Création d'une API, données dynamiques et gestion BDD.</p>
+          </div>
+          <img src="images/backend.png" alt="backend"/>
         </div>
-        <img src="images/backend.png" alt="backend"/>
-      </div>
-    </section>
-    <section id="projects" class="js-scroll">
-      <h2>MES PROJETS</h2>
-      <div class="allprojectcards">
-        <div class="projectcard">
-          <figure>
-            <img src="images/groupomania.png" alt="groupomania"/>
-            <figcaption>
-              <h2 class="projectcard_title">Mise en place d’un réseau social d’entreprise,
-                avec login et interactions entre les utilisateurs</h2>
-                <a class="projectcard_linktxt" href="https://github.com/guillaume-naval/Groupomania-Front-end" rel="noopener" target="_blank">
+      </section>
+      <section id="projects" class="js-scroll slide-in-up">
+        <h2>MES PROJETS</h2>
+        <div class="allprojectcards">
+          <div class="projectcard">
+            <figure>
+              <img src="images/groupomania.png" alt="groupomania"/>
+              <figcaption>
+                <h2 class="projectcard_title">Mise en place d’un réseau social d’entreprise,
+                  avec login et interactions entre les utilisateurs</h2>
+                  <a class="projectcard_linktxt" href="https://github.com/guillaume-naval/Groupomania-Front-end" rel="noopener" target="_blank">
+                    <span>Le projet sur Github</span>
+                  </a>
+              </figcaption>
+            </figure>
+          </div>
+          <div class="projectcard">
+            <figure>
+              <img src="images/piquante.png" alt="piquante"/>
+              <figcaption>
+                <h2 class="projectcard_title">Backend seulement, mise en place du CRUD, et de MongoDB</h2>
+                <a class="projectcard_linktxt" href="https://github.com/guillaume-naval/P6_SoPekocko" rel="noopener" target="_blank">
                   <span>Le projet sur Github</span>
                 </a>
-            </figcaption>
-          </figure>
+              </figcaption>
+            </figure>
+          </div>
+          <div class="projectcard">
+            <figure>
+              <img src="images/reservia.png" alt="reservia"/>
+              <figcaption>
+                <h2 class="projectcard_title">Site vitrine de planification de vacances et d’hébergements</h2>
+                <a class="projectcard_linktxt" href="https://guillaume-naval.github.io/Reservia/" rel="noopener" target="_blank">
+                  <span>Visiter le site</span>
+                </a>
+                <a class="projectcard_linktxt" href="https://github.com/guillaume-naval/Reservia" rel="noopener" target="_blank">
+                  <span>Le projet sur Github</span>
+                </a>
+              </figcaption>
+            </figure>
+          </div>
         </div>
-        <div class="projectcard">
-          <figure>
-            <img src="images/piquante.png" alt="piquante"/>
-            <figcaption>
-              <h2 class="projectcard_title">Backend seulement, mise en place du CRUD, et de MongoDB</h2>
-              <a class="projectcard_linktxt" href="https://github.com/guillaume-naval/P6_SoPekocko" rel="noopener" target="_blank">
-                <span>Le projet sur Github</span>
-              </a>
-            </figcaption>
-          </figure>
-        </div>
-        <div class="projectcard">
-          <figure>
-            <img src="images/reservia.png" alt="reservia"/>
-            <figcaption>
-              <h2 class="projectcard_title">Site vitrine de planification de vacances et d’hébergements</h2>
-              <a class="projectcard_linktxt" href="https://guillaume-naval.github.io/Reservia/" rel="noopener" target="_blank">
-                <span>Visiter le site</span>
-              </a>
-              <a class="projectcard_linktxt" href="https://github.com/guillaume-naval/Reservia" rel="noopener" target="_blank">
-                <span>Le projet sur Github</span>
-              </a>
-            </figcaption>
-          </figure>
-        </div>
-      </div>
-    </section>
-    <section id="contact" class="js-scroll">
-      <h2>CONTACT</h2>
-      <p class="skillblue contacttxt">Une question ? N’hésitez pas à me contacter, pour me faire part 
-        de vos offres et vos projets !</p>
-      <!-- <iframe name="votar" style="display:none;"></iframe> weird trick  -->
-      <form method="POST" action="mail-script.php" class="form" target="votar" onSubmit="alert('Merci ! Votre message a été envoyé !');">
-        <!--Nom-->
-        <input type="text" class="form-name" name="name" id="name" placeholder="Nom*" required>
-        <!--Email-->
-        <input type="email" class="form-email" name="email" id="email" placeholder="Email*" required>
-        <!--Message-->
-        <textarea placeholder="Message*" id="message" name="message" required="" class="formmsg"></textarea>
-        <input type="submit" class="btnsend" name="submit" value="Envoyer le message">
-      </form>
-    </section>
-  </div>
+      </section>
+      <section id="contact" class="js-scroll slide-in-up">
+        <h2>CONTACT</h2>
+        <p class="skillblue contacttxt">Une question ? N’hésitez pas à me contacter, pour me faire part 
+          de vos offres et vos projets !</p>
+        <!-- <iframe name="votar" style="display:none;"></iframe> weird trick  -->
+        <form method="POST" action="mail-script.php" class="form" target="votar" onSubmit="alert('Merci ! Votre message a été envoyé !');">
+          <!--Nom-->
+          <input type="text" class="form-name" name="name" id="name" placeholder="Nom*" required>
+          <!--Email-->
+          <input type="email" class="form-email" name="email" id="email" placeholder="Email*" required>
+          <!--Message-->
+          <textarea placeholder="Message*" id="message" name="message" required="" class="formmsg"></textarea>
+          <input type="submit" class="btnsend" name="submit" value="Envoyer le message">
+        </form>
+      </section>
+    </div>
+  </div >
   <footer>
     <div class="social_icons">
       <a href="https://github.com/guillaume-naval" target="_blank" rel="noopener" class="social_link" rel="noopener">
@@ -197,7 +211,7 @@
         <i class="fab fa-twitter" alt="twitter_icon"></i>
       </a>
     </div>
-    <p>Guillaume Naval © 2021</p>
+    <p class="lblue">Guillaume Naval © 2021</p>
   </footer>
   <script src="index.js" defer></script>
 </body>
